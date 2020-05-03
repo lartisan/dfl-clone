@@ -56394,14 +56394,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var history = Object(history__WEBPACK_IMPORTED_MODULE_0__["createBrowserHistory"])(); // const composeEnhancers = process.env.NODE_ENV === 'development'
-// 	? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null || compose
-
+var history = Object(history__WEBPACK_IMPORTED_MODULE_0__["createBrowserHistory"])();
+var composeEnhancers =  true ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : undefined;
 var sagaMiddleware = Object(redux_saga__WEBPACK_IMPORTED_MODULE_4__["default"])();
 var store = Object(redux__WEBPACK_IMPORTED_MODULE_1__["createStore"])( // rootReducer,
-Object(_reducers__WEBPACK_IMPORTED_MODULE_5__["default"])(history), // composeEnhancers(
-Object(redux__WEBPACK_IMPORTED_MODULE_1__["applyMiddleware"])(Object(connected_react_router__WEBPACK_IMPORTED_MODULE_2__["routerMiddleware"])(history), redux_thunk__WEBPACK_IMPORTED_MODULE_3__["default"], sagaMiddleware) // )
-);
+Object(_reducers__WEBPACK_IMPORTED_MODULE_5__["default"])(history), composeEnhancers(Object(redux__WEBPACK_IMPORTED_MODULE_1__["applyMiddleware"])(Object(connected_react_router__WEBPACK_IMPORTED_MODULE_2__["routerMiddleware"])(history), redux_thunk__WEBPACK_IMPORTED_MODULE_3__["default"], sagaMiddleware)));
 sagaMiddleware.run(_sagas__WEBPACK_IMPORTED_MODULE_6__["watchProducts"]);
 sagaMiddleware.run(_sagas__WEBPACK_IMPORTED_MODULE_6__["watchTopSellers"]);
 sagaMiddleware.run(_sagas__WEBPACK_IMPORTED_MODULE_6__["watchNewArrivals"]);
@@ -56410,6 +56407,17 @@ sagaMiddleware.run(_sagas__WEBPACK_IMPORTED_MODULE_6__["watchCategory"]);
 sagaMiddleware.run(_sagas__WEBPACK_IMPORTED_MODULE_6__["watchCategoryList"]);
 sagaMiddleware.run(_sagas__WEBPACK_IMPORTED_MODULE_6__["watchProduct"]);
 /* harmony default export */ __webpack_exports__["default"] = (store);
+
+/***/ }),
+
+/***/ "./resources/js/store/reducers/cart.js":
+/*!*********************************************!*\
+  !*** ./resources/js/store/reducers/cart.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/cristianiosif/Sites/dfl-clone/resources/js/store/reducers/cart.js: Unexpected token (18:1)\n\n\u001b[0m \u001b[90m 16 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 | \u001b[39m\t\u001b[36mconst\u001b[39m updatedItem\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 | \u001b[39m\t\u001b[36mconst\u001b[39m updatedItems \u001b[33m=\u001b[39m updateObject(state\u001b[33m.\u001b[39mitemsDataBySlug\u001b[33m,\u001b[39m { [action\u001b[33m.\u001b[39mslug]\u001b[33m:\u001b[39m updatedItem })\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\t\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 | \u001b[39m\t\u001b[36mreturn\u001b[39m updateObject(state\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 21 | \u001b[39m\t\taddedSlugs\u001b[33m:\u001b[39m state\u001b[33m.\u001b[39maddedSlugs\u001b[33m.\u001b[39mconcat(action\u001b[33m.\u001b[39mslug)\u001b[33m,\u001b[39m\u001b[0m\n    at Object._raise (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:742:17)\n    at Object.raiseWithData (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:735:17)\n    at Object.raise (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:729:17)\n    at Object.unexpected (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:8779:16)\n    at Object.parseVar (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11767:18)\n    at Object.parseVarStatement (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11572:10)\n    at Object.parseStatementContent (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11171:21)\n    at Object.parseStatement (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11104:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11679:25)\n    at Object.parseBlockBody (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11665:10)\n    at Object.parseBlock (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11649:10)\n    at Object.parseFunctionBody (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:10656:24)\n    at Object.parseArrowExpression (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:10625:10)\n    at Object.parseParenAndDistinguishExpression (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:10243:12)\n    at Object.parseExprAtom (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:9969:21)\n    at Object.parseExprAtom (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:4626:20)\n    at Object.parseExprSubscripts (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:9624:23)\n    at Object.parseMaybeUnary (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:9604:21)\n    at Object.parseExprOps (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:9474:23)\n    at Object.parseMaybeConditional (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:9447:23)\n    at Object.parseMaybeAssign (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:9402:21)\n    at Object.parseVar (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11763:26)\n    at Object.parseVarStatement (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11572:10)\n    at Object.parseStatementContent (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11171:21)\n    at Object.parseStatement (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11104:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11679:25)\n    at Object.parseBlockBody (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11665:10)\n    at Object.parseTopLevel (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:11035:10)\n    at Object.parse (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:12671:10)\n    at parse (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/parser/lib/index.js:12722:38)\n    at parser (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/core/lib/parser/index.js:54:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/core/lib/transformation/normalize-file.js:93:38)\n    at normalizeFile.next (<anonymous>)\n    at run (/Users/cristianiosif/Sites/dfl-clone/node_modules/@babel/core/lib/transformation/index.js:31:50)\n    at run.next (<anonymous>)");
 
 /***/ }),
 
@@ -56622,6 +56630,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _category__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./category */ "./resources/js/store/reducers/category.js");
 /* harmony import */ var _categoryList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./categoryList */ "./resources/js/store/reducers/categoryList.js");
 /* harmony import */ var _product__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./product */ "./resources/js/store/reducers/product.js");
+/* harmony import */ var _cart__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./cart */ "./resources/js/store/reducers/cart.js");
+/* harmony import */ var _cart__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_cart__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
@@ -56630,7 +56640,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import cartReducer from './cart';
+
+
 
 var rootReducer = function rootReducer(history) {
   return Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
@@ -56641,8 +56652,8 @@ var rootReducer = function rootReducer(history) {
     categories: _categories__WEBPACK_IMPORTED_MODULE_5__["default"],
     category: _category__WEBPACK_IMPORTED_MODULE_6__["default"],
     categoryList: _categoryList__WEBPACK_IMPORTED_MODULE_7__["default"],
-    product: _product__WEBPACK_IMPORTED_MODULE_8__["default"] // cart: cartReducer
-
+    product: _product__WEBPACK_IMPORTED_MODULE_8__["default"],
+    cart: _cart__WEBPACK_IMPORTED_MODULE_9___default.a
   });
 };
 
