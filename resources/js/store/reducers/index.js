@@ -8,7 +8,7 @@ import categoriesReducer from "./categories";
 import categoryReducer from "./category";
 import categoryListReducer from "./categoryList";
 import productReducer from "./product";
-// import cartReducer from './cart';
+import cartReducer from "./cart";
 
 const rootReducer = history =>
     combineReducers({
@@ -19,8 +19,8 @@ const rootReducer = history =>
         categories: categoriesReducer,
         category: categoryReducer,
         categoryList: categoryListReducer,
-        product: productReducer
-        // cart: cartReducer
+        product: productReducer,
+        cart: cartReducer
     });
 
 export default rootReducer;
