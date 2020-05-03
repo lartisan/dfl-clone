@@ -2,10 +2,7 @@
 
 namespace App;
 
-use App\Product;
-use App\Category;
 use Ramsey\Uuid\Uuid;
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -14,10 +11,10 @@ class CategoryList extends Model
 	use SoftDeletes;
 
 	/**
-	 * The attributes that are mass assignable.
-	 *
-	 * @var array
-	 */
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
 	protected $fillable = [
 		'category_id',
 		'name',
@@ -27,29 +24,29 @@ class CategoryList extends Model
 	];
 
 	/**
-	 * The attributes that should be mutated to dates.
-	 *
-	 * @var array
-	 */
-	protected $dates = ['deleted_at'];
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at'];
 
 	const ACTIVE_STATUS = 'active';
 	const INACTIVE_STATUS = 'inactive';
 
 	/**
-	 * The "booting" method of the model.
-	 *
-	 * @return void
-	 */
+     * The "booting" method of the model.
+     *
+     * @return void
+     */
 	protected static function boot()
 	{
 		parent::boot();
 
-		static::creating(function ($model) {
+		static::creating(function($model) {
 			$model->uuid = Uuid::uuid4()->toString();
-			$slug = Str::slug($model->name);
+			$slug = str_slug($model->name);
 
-			if (static::whereSlug($slug)->exists()) {
+			if(static::whereSlug($slug)->exists()) {
 				$slug = "{$slug}-" . $model->id;
 			}
 
@@ -68,8 +65,8 @@ class CategoryList extends Model
 	}
 
 	/**
-	 * Get the statuses for the categoryList.
-	 */
+     * Get the statuses for the categoryList.
+     */
 	public static function statuses()
 	{
 		return [
@@ -78,8 +75,7 @@ class CategoryList extends Model
 		];
 	}
 
-	public function isAvailable()
-	{
+	public function isAvailable() {
 		return $this->status === 'active';
 	}
 
@@ -89,24 +85,24 @@ class CategoryList extends Model
 	}
 
 	/**
-	 * Get the category that owns the categoryList.
-	 */
+     * Get the category that owns the categoryList.
+     */
 	public function category()
 	{
 		return $this->belongsTo(Category::class);
 	}
 
 	/**
-	 * Get the available products the categoryList.
-	 */
+     * Get the available products the categoryList.
+     */
 	public function availableProducts()
 	{
 		return $this->hasMany(Product::class)->available();
 	}
 
 	/**
-	 * Get all the products the categoryList.
-	 */
+     * Get all the products the categoryList.
+     */
 	public function allProducts()
 	{
 		return $this->hasMany(Product::class);

@@ -11,12 +11,16 @@
 		<title>dress-for-less clone</title>
 		
 		<!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     </head>
-    <body>
-        <div id="app"></div>
+    <body class="flex flex-col justify-between">
+        <header>
+            <img src="{{ asset('img/logo.svg') }}" alt="" srcset="">
+        </header>
 
+        <main></main>
+
+        <footer></footer>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
     </html>

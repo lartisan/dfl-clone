@@ -2,19 +2,18 @@
 
 namespace App;
 
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Brand extends Model
 {
-	use SoftDeletes;
+    use SoftDeletes;
 
 	/**
-	 * The attributes that are mass assignable.
-	 *
-	 * @var array
-	 */
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
 	protected $fillable = [
 		'name',
 		'slug',
@@ -23,29 +22,29 @@ class Brand extends Model
 	];
 
 	/**
-	 * The attributes that should be mutated to dates.
-	 *
-	 * @var array
-	 */
-	protected $dates = ['deleted_at'];
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at'];
 
 	const ACTIVE_STATUS = 'active';
 	const INACTIVE_STATUS = 'inactive';
 
 	/**
-	 * The "booting" method of the model.
-	 *
-	 * @return void
-	 */
+     * The "booting" method of the model.
+     *
+     * @return void
+     */
 	protected static function boot()
 	{
 		parent::boot();
 
-		static::creating(function ($model) {
+		static::creating(function($model) {
 			// $model->uuid = Uuid::uuid4()->toString();
-			$slug = Str::slug($model->name);
+			$slug = str_slug($model->name);
 
-			if (static::whereSlug($slug)->exists()) {
+			if(static::whereSlug($slug)->exists()) {
 				$slug = "{$slug}-" . $model->id;
 			}
 
@@ -64,8 +63,8 @@ class Brand extends Model
 	}
 
 	/**
-	 * Get the products for the brand.
-	 */
+     * Get the products for the brand.
+     */
 	public function products()
 	{
 		return $this->hasMany(Product::class);

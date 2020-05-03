@@ -2,10 +2,7 @@
 
 namespace App;
 
-use App\Brand;
-use App\CategoryList;
 use Ramsey\Uuid\Uuid;
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -20,11 +17,11 @@ class Product extends Model
 	const SOLD_OUT_STATUS = 'sold-out';
 
 	/**
-	 * The attributes that are mass assignable.
-	 *
-	 * @var array
-	 */
-	protected $fillable = [
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
 		'brand_id',
 		'uuid',
 		'category_list_id',
@@ -38,32 +35,33 @@ class Product extends Model
 	];
 
 	/**
-	 * The number of models to return for pagination.
-	 *
-	 * @var  int
-	 */
+     * The number of models to return for pagination.
+     *
+     * @var  int
+     */
 	protected $perPage = 15;
 
 	/**
-	 * The attributes that should be mutated to dates.
-	 *
-	 * @var array
-	 */
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
 	protected $dates = ['deleted_at'];
 
 	/**
-	 * The "booting" method of the model.
-	 *
-	 * @return void
-	 */
+     * The "booting" method of the model.
+     *
+     * @return void
+     */
 	protected static function boot()
 	{
 		parent::boot();
 
-		static::creating(function ($model) {
+		static::creating(function($model)
+		{
 			$model->uuid = Uuid::uuid4()->toString();
 
-			$slug = Str::slug($model->title);
+			$slug = str_slug($model->title);
 
 			// if(static::whereSlug($slug)->exists()) {
 			// 	$slug = "{$slug}-" . self::id;
@@ -72,7 +70,7 @@ class Product extends Model
 			$model->slug = $slug;
 		});
 
-		static::updating(function ($model) {
+		static::updating(function($model) {
 			$model->slug = str_slug($model->title);
 		});
 	}
@@ -85,32 +83,32 @@ class Product extends Model
 	public function getRouteKeyName()
 	{
 		return 'slug';
-	}
+    }
+
+    /**
+     * Get the product's price with 2 decimals.
+     *
+     * @return string
+     */
+    public function getPriceAttribute($price)
+    {
+        return number_format($price / 100, 2);
+    }
+
+    /**
+     * Set the product's price.
+     *
+     * @param  string  $value
+     * @return void
+     */
+    public function setFirstNameAttribute($value)
+    {
+        $this->attributes['first_name'] = strtolower($value);
+    }
 
 	/**
-	 * Get the product's price with 2 decimals.
-	 *
-	 * @return string
-	 */
-	public function getPriceAttribute($price)
-	{
-		return number_format($price / 100, 2);
-	}
-
-	/**
-	 * Set the product's price.
-	 *
-	 * @param  string  $value
-	 * @return void
-	 */
-	public function setFirstNameAttribute($value)
-	{
-		$this->attributes['first_name'] = strtolower($value);
-	}
-
-	/**
-	 * Get all the statuses for the product.
-	 */
+     * Get all the statuses for the product.
+     */
 	public static function statuses()
 	{
 		return [
@@ -123,18 +121,17 @@ class Product extends Model
 	}
 
 	/**
-	 * Check if a product is available
+     * Check if a product is available
 	 *
 	 * @return boolean
-	 */
-	public function isAvailable()
-	{
+     */
+	public function isAvailable() {
 		return $this->status === 'active';
 	}
 
 	/**
-	 * Get the available statuses for the product.
-	 */
+     * Get the available statuses for the product.
+     */
 	public static function availableStatuses()
 	{
 		return [
@@ -145,11 +142,11 @@ class Product extends Model
 	}
 
 	/**
-	 * Scope a query to only include available products.
-	 *
-	 * @param \Illuminate\Database\Eloquent\Builder $query
-	 * @return \Illuminate\Database\Eloquent\Builder
-	 */
+     * Scope a query to only include available products.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
 	public function scopeAvailable($query)
 	{
 		return $query->whereIn('products.status', self::availableStatuses());
@@ -186,4 +183,5 @@ class Product extends Model
 	{
 		return $this->hasMany(ProductAttributes::class, 'product_id');
 	}
+
 }
