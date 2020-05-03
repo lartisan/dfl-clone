@@ -52871,19 +52871,19 @@ __webpack_require__.r(__webpack_exports__);
 var Arrow = function Arrow(_ref) {
   var direction = _ref.direction,
       clickFunction = _ref.clickFunction;
-  var position = direction === 'r' ? {
-    top: '50%',
-    right: '-3%'
+  var position = direction === "r" ? {
+    top: "50%",
+    right: "-3%"
   } : {
-    top: '50%',
-    left: '-3%'
+    top: "50%",
+    left: "-3%"
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cursor-pointer text-grey-dark hover:text-black mx-2 absolute pin-".concat(direction),
+    className: "cursor-pointer text-gray-dark hover:text-black mx-2 absolute pin-".concat(direction),
     style: position,
     onClick: clickFunction
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
-    icon: direction === 'l' ? _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faChevronLeft"] : _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faChevronRight"],
+    icon: direction === "l" ? _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faChevronLeft"] : _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faChevronRight"],
     className: "fa-2x"
   }));
 };
@@ -53349,7 +53349,7 @@ var RedeemVoucher = /*#__PURE__*/function (_Component) {
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "flex items-center border-b border-b-2 border-green py-2"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-          className: "appearance-none bg-transparent border-none w-full text-grey-darker mr-3 py-1 px-2 leading-tight focus:outline-none",
+          className: "appearance-none bg-transparent border-none w-full text-gray-darker mr-3 py-1 px-2 leading-tight focus:outline-none",
           type: "text",
           placeholder: "Jane Doe",
           "aria-label": "Full name"
@@ -53384,7 +53384,7 @@ var RedeemVoucher = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inline-block relative w-full"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-        className: "block appearance-none w-full bg-grey-light border border-grey-light hover:border-grey px-4 py-2 pr-8 leading-tight focus:outline-none"
+        className: "block appearance-none w-full bg-gray-light border border-gray-light hover:border-grey px-4 py-2 pr-8 leading-tight focus:outline-none"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "1"
       }, "Germany"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -53392,7 +53392,7 @@ var RedeemVoucher = /*#__PURE__*/function (_Component) {
       }, "Romania"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "3"
       }, "Israel")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
+        className: "pointer-events-none absolute pin-y pin-r flex items-center px-2 text-gray-darker"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faAngleDown"],
         className: ""
@@ -53405,18 +53405,18 @@ var RedeemVoucher = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inline-block relative w-full"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-        className: "block appearance-none w-full bg-grey-light border border-grey-light hover:border-grey px-4 py-2 pr-8 leading-tight focus:outline-none"
+        className: "block appearance-none w-full bg-gray-light border border-gray-light hover:border-grey px-4 py-2 pr-8 leading-tight focus:outline-none"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "1"
       }, "DHL Standard Delivery"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "2"
       }, "DHL Express Delivery")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
+        className: "pointer-events-none absolute pin-y pin-r flex items-center px-2 text-gray-darker"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faAngleDown"],
         className: ""
       }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "flex flex-wrap pt-2 pb-6 border-b border-grey-light"
+        className: "flex flex-wrap pt-2 pb-6 border-b border-gray-light"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "w-5/12"
       }, "Delivery costs", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
@@ -53569,19 +53569,19 @@ var Filters = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "w-1/4 px-2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "text-sm text-black bg-grey-lighter h-auto p-3"
+        className: "text-sm text-black bg-gray-lighter h-auto p-3"
       }, "Brand")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "w-1/4 px-2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "text-sm text-black bg-grey-lighter h-auto p-3"
+        className: "text-sm text-black bg-gray-lighter h-auto p-3"
       }, "Colour")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "w-1/4 px-2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "text-sm text-black bg-grey-lighter h-auto p-3"
+        className: "text-sm text-black bg-gray-lighter h-auto p-3"
       }, "Size")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "w-1/4 pl-2 ml-32"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "text-sm text-black bg-grey-lighter h-auto p-3"
+        className: "text-sm text-black bg-gray-lighter h-auto p-3"
       }, "Page")));
     }
   }]);
@@ -53608,7 +53608,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Footer = function Footer(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " bg-grey-lighter p-8"
+    className: " bg-gray-lighter p-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sm:flex mb-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -53618,21 +53618,21 @@ var Footer = function Footer(props) {
   }, "Orange"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-reset leading-normal"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-orange text-grey-darker"
+    className: "hover:text-orange text-gray-darker"
   }, "One"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-orange text-grey-darker"
+    className: "hover:text-orange text-gray-darker"
   }, "Two"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-orange text-grey-darker"
+    className: "hover:text-orange text-gray-darker"
   }, "Three"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-orange text-grey-darker"
+    className: "hover:text-orange text-gray-darker"
   }, "Four"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-orange text-grey-darker"
+    className: "hover:text-orange text-gray-darker"
   }, "Five"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-orange text-grey-darker"
+    className: "hover:text-orange text-gray-darker"
   }, "Six"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-orange text-grey-darker"
+    className: "hover:text-orange text-gray-darker"
   }, "Seven"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-orange text-grey-darker"
+    className: "hover:text-orange text-gray-darker"
   }, "Eight"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sm:w-1/4 h-auto sm:mt-0 mt-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -53640,21 +53640,21 @@ var Footer = function Footer(props) {
   }, "Blue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-reset leading-normal"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-blue text-grey-darker"
+    className: "hover:text-blue text-gray-darker"
   }, "One"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-blue text-grey-darker"
+    className: "hover:text-blue text-gray-darker"
   }, "Two"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-blue text-grey-darker"
+    className: "hover:text-blue text-gray-darker"
   }, "Three")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text-blue-light mb-2 mt-4"
   }, "Blue-light"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-reset leading-normal"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-blue-light text-grey-darker"
+    className: "hover:text-blue-light text-gray-darker"
   }, "One"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-blue-light text-grey-darker"
+    className: "hover:text-blue-light text-gray-darker"
   }, "Two"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-blue-light text-grey-darker"
+    className: "hover:text-blue-light text-gray-darker"
   }, "Three"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sm:w-1/4 h-auto sm:mt-0 mt-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -53662,32 +53662,32 @@ var Footer = function Footer(props) {
   }, "Green-dark"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-reset leading-normal"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-green-dark text-grey-darker"
+    className: "hover:text-green-dark text-gray-darker"
   }, "One"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-green-dark text-grey-darker"
+    className: "hover:text-green-dark text-gray-darker"
   }, "Two"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-green-dark text-grey-darker"
+    className: "hover:text-green-dark text-gray-darker"
   }, "Three")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text-green-light mb-2 mt-4"
   }, "Green-light"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-reset leading-normal"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-green-light text-grey-darker"
+    className: "hover:text-green-light text-gray-darker"
   }, "One"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-green-light text-grey-darker"
+    className: "hover:text-green-light text-gray-darker"
   }, "Two"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "hover:text-green-light text-grey-darker"
+    className: "hover:text-green-light text-gray-darker"
   }, "Three"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sm:w-1/2 sm:mt-0 mt-8 h-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text-red-light mb-2"
   }, "Newsletter"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-grey-darker leading-normal"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, consectetur. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-gray-darker leading-normal"
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, consectetur.", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mt-4 flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
-    className: "p-2 border border-grey-light round text-grey-dark text-sm h-auto",
+    className: "p-2 border border-gray-light round text-gray-dark text-sm h-auto",
     placeholder: "Your email address"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "bg-orange text-white rounded-sm h-auto text-xs p-3"
@@ -54149,7 +54149,7 @@ var NavigationContainer = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "w-1/4 md:hidden"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-        className: "fill-current text-grey-darker h-8 w-8",
+        className: "fill-current text-gray-darker h-8 w-8",
         xmlns: "http://www.w3.org/2000/svg",
         viewBox: "0 0 20 20"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
@@ -54237,7 +54237,7 @@ var CartIcon = /*#__PURE__*/function (_Component) {
     _this = _super.call.apply(_super, [this].concat(args));
 
     _defineProperty(_assertThisInitialized(_this), "goToCartPage", function () {
-      return _this.props.history.push('/cart');
+      return _this.props.history.push("/cart");
     });
 
     return _this;
@@ -54253,7 +54253,7 @@ var CartIcon = /*#__PURE__*/function (_Component) {
         className: "text-xl"
       });
       var itemsList = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "border-b border-grey-light px-2 py-4 text-left text-sm"
+        className: "border-b border-gray-light px-2 py-4 text-left text-sm"
       }, "Your shopping cart is empty");
       var proceedToCheckoutButton = null;
       var displaySubTotal = 0;
@@ -54275,9 +54275,9 @@ var CartIcon = /*#__PURE__*/function (_Component) {
       // 					<img src={item.image.path} alt={item.name} />
       // 				</div>
       // 				<div className="w-2/3 px-2">
-      // 					<p className="bg-grey-lighter text-xs p-2 w-auto">{item.qty} x</p>
+      // 					<p className="bg-gray-lighter text-xs p-2 w-auto">{item.qty} x</p>
       // 					<p className="text-sm">{item.name}</p>
-      // 					<p className="text-sm text-grey-dark">size: {item.size}</p>
+      // 					<p className="text-sm text-gray-dark">size: {item.size}</p>
       // 					<p className="text-lg">{priceFormat(item.final_price)}</p>
       // 				</div>
       // 			</div>
@@ -54297,13 +54297,13 @@ var CartIcon = /*#__PURE__*/function (_Component) {
         to: "/cart",
         className: "text-black"
       }, carticonOutput), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "absolute z-50 -ml-32 pin-r border border-grey-light bg-white invisible group-hover:visible w-64 h-auto"
+        className: "absolute z-50 -ml-32 pin-r border border-gray-light bg-white invisible group-hover:visible w-64 h-auto"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "bg-grey-lighter w-full h-8"
+        className: "bg-gray-lighter w-full h-8"
       }), itemsList, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "border-b border-grey-light p-3"
+        className: "border-b border-gray-light p-3"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "flex flex-col border-t border-grey-light"
+        className: "flex flex-col border-t border-gray-light"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "py-2 text-black text-sm font-semibold"
       }, "Subtotal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -54314,7 +54314,7 @@ var CartIcon = /*#__PURE__*/function (_Component) {
         className: "text-center py-3 px-6"
       }, proceedToCheckoutButton, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.goToCartPage,
-        className: "bg-transparent text-xs text-green-dark font-semibold py-2 px-4 border border-grey-dark w-full"
+        className: "bg-transparent text-xs text-green-dark font-semibold py-2 px-4 border border-gray-dark w-full"
       }, "View shopping cart"))));
     }
   }]);
@@ -54596,18 +54596,18 @@ var Sidebar = /*#__PURE__*/function (_Component) {
       var children = category.children.map(function (categoryList) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           key: categoryList.slug,
-          className: "border-t border-grey-light"
+          className: "border-t border-gray-light"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-          to: '/' + category.slug + '/' + categoryList.slug,
+          to: "/" + category.slug + "/" + categoryList.slug,
           key: categoryList.slug,
-          className: "flex capitalize no-underline text-sm text-grey-darker p-3 hover:underline",
+          className: "flex capitalize no-underline text-sm text-gray-darker p-3 hover:underline",
           activeClassName: "activeCategoryList"
         }, categoryList.name));
       });
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "w-1/5 px-2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "capitalize text-sm font-semibold border-t border-grey bg-grey-lighter h-auto p-3"
+        className: "capitalize text-sm font-semibold border-t border-grey bg-gray-lighter h-auto p-3"
       }, category.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "mt-3"
       }, children));
@@ -54701,7 +54701,7 @@ var NewArrivals = /*#__PURE__*/function (_Component) {
     value: function render() {
       var products = this.props.products;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_hoc_Aux_Aux__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-        className: "text-center my-6 text-3xl text-grey-darkest"
+        className: "text-center my-6 text-3xl text-gray-darkest"
       }, "New Arrivals"), products && products.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Carousel_Carousel__WEBPACK_IMPORTED_MODULE_5__["default"], {
         products: products,
         onPageChanged: this.onPageChanged,
@@ -54789,7 +54789,7 @@ var OurRecommendations = /*#__PURE__*/function (_Component) {
     value: function render() {
       var products = this.props.products;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_hoc_Aux_Aux__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-        className: "text-center my-6 text-xl text-grey-darkest"
+        className: "text-center my-6 text-xl text-gray-darkest"
       }, "Our recommendations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex flex-wrap max-w-2xl mx-auto my-8"
       }, products.map(function (product, key) {
@@ -54978,10 +54978,10 @@ var ProductCard = /*#__PURE__*/function (_Component) {
           product = _this$props.product,
           imgClasses = _this$props.imgClasses;
       var imgStyle = {
-        background: 'url(' + product.image.path + ') no-repeat center center/cover'
+        background: "url(" + product.image.path + ") no-repeat center center/cover"
       };
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: '/products/' + product.slug,
+        to: "/products/" + product.slug,
         className: "rounded-lg shadow hover:shadow-lg mx-2 flex flex-col flex-1 no-underline transition hover:scale-2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: imgClasses,
@@ -54989,7 +54989,7 @@ var ProductCard = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-6 flex flex-col flex-1"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "mb-3 text-grey-darkest text-sm text-center"
+        className: "mb-3 text-gray-darkest text-sm text-center"
       }, product.brand.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex flex-wrap"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -55084,7 +55084,7 @@ var QuantitySelector = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         value: selectedValue,
         onChange: this.updateQty,
-        className: "block appearance-none w-full bg-grey-light border border-grey-light hover:border-grey px-4 py-2 pr-8 leading-tight focus:outline-none"
+        className: "block appearance-none w-full bg-gray-light border border-gray-light hover:border-grey px-4 py-2 pr-8 leading-tight focus:outline-none"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "1"
       }, "1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -55092,7 +55092,7 @@ var QuantitySelector = /*#__PURE__*/function (_Component) {
       }, "2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "3"
       }, "3")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
+        className: "pointer-events-none absolute pin-y pin-r flex items-center px-2 text-gray-darker"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faAngleDown"],
         className: ""
@@ -55178,7 +55178,7 @@ var SizeSelector = /*#__PURE__*/function (_Component) {
         className: "inline-block relative w-32 mr-4"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         onChange: this.updateSize,
-        className: "block appearance-none w-full bg-grey-light border border-grey-light hover:border-grey px-4 py-2 pr-8 leading-tight focus:outline-none"
+        className: "block appearance-none w-full bg-gray-light border border-gray-light hover:border-grey px-4 py-2 pr-8 leading-tight focus:outline-none"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: ""
       }, "size"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -55188,7 +55188,7 @@ var SizeSelector = /*#__PURE__*/function (_Component) {
       }, "M"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "L"
       }, "L")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
+        className: "pointer-events-none absolute pin-y pin-r flex items-center px-2 text-gray-darker"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faAngleDown"],
         className: ""
@@ -55283,7 +55283,7 @@ var TopSellers = /*#__PURE__*/function (_Component) {
     value: function render() {
       var products = this.props.products;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_hoc_Aux_Aux__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-        className: "text-center my-6 text-3xl text-grey-darkest"
+        className: "text-center my-6 text-3xl text-gray-darkest"
       }, "Top Sellers"), products && products.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Carousel_Carousel__WEBPACK_IMPORTED_MODULE_5__["default"], {
         products: products,
         onPageChanged: this.onPageChanged,
@@ -55388,7 +55388,7 @@ var Table = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TableBody__WEBPACK_IMPORTED_MODULE_3__["default"], {
         cartItems: cartItems
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "flex flex-wrap border-t border-grey-light py-4"
+        className: "flex flex-wrap border-t border-gray-light py-4"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_RedeemVoucher__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_OrderTotalsArea__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
     }
   }]);
@@ -55568,7 +55568,7 @@ var TableHead = /*#__PURE__*/function (_Component) {
     value: function render() {
       var thItems = this.props.thItems;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", {
-        className: "border-grey-lighter"
+        className: "border-gray-lighter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, thItems.map(function (thItem, key) {
         if (key === 0 || key === 1) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
           key: key,
@@ -57663,7 +57663,7 @@ var CartView = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       var items = this.props.items;
-      var thItems = ['Product', 'Number', 'Unit price (RRP)', 'You save*', 'Your price', 'Total price'];
+      var thItems = ["Product", "Number", "Unit price (RRP)", "You save*", "Your price", "Total price"];
       var displayCartItems = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_EmptyCart__WEBPACK_IMPORTED_MODULE_6__["default"], null);
 
       if (items.length) {
@@ -57686,14 +57686,14 @@ var CartView = /*#__PURE__*/function (_Component) {
           className: "w-2/6"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           onClick: this.goHome,
-          className: "bg-transparent text-sm text-grey-darkest font-semibold py-2 px-4 border border-grey-darker"
+          className: "bg-transparent text-sm text-gray-darkest font-semibold py-2 px-4 border border-gray-darker"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
           icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faChevronLeft"],
           className: "mr-2"
         }), "Continue shopping")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "w-3/6 ml-auto"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Cart_CheckoutButtons__WEBPACK_IMPORTED_MODULE_7__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          className: "text-right text-xs text-grey-darker mt-2"
+          className: "text-right text-xs text-gray-darker mt-2"
         }, "* on the manufacturer's recommended retail price"));
       }
 
@@ -58062,7 +58062,7 @@ var EmptyCart = /*#__PURE__*/function (_Component) {
     _this = _super.call.apply(_super, [this].concat(args));
 
     _defineProperty(_assertThisInitialized(_this), "goHome", function () {
-      return _this.props.history.push('/');
+      return _this.props.history.push("/");
     });
 
     return _this;
@@ -58077,7 +58077,7 @@ var EmptyCart = /*#__PURE__*/function (_Component) {
         className: "my-8"
       }, "Your shopping cart is empty!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.goHome,
-        className: "bg-transparent text-black font-semibold py-2 px-4 border border-grey-darker"
+        className: "bg-transparent text-black font-semibold py-2 px-4 border border-gray-darker"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faChevronLeft"],
         className: "mr-2"
@@ -58318,7 +58318,7 @@ var ProductView = /*#__PURE__*/function (_Component) {
         productOutput = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "w-full my-px"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          className: "capitalize text-lg text-grey-darkest"
+          className: "capitalize text-lg text-gray-darkest"
         }, product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "flex mb-4 pt-2"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -58341,22 +58341,22 @@ var ProductView = /*#__PURE__*/function (_Component) {
         }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
           className: "mt-2"
         }, product.brand.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          className: "text-sm text-grey-darker my-2"
+          className: "text-sm text-gray-darker my-2"
         }, "Item number ", product.uuid), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "py-2"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "line-through"
-        }, Object(_shared_currency__WEBPACK_IMPORTED_MODULE_3__["priceFormat"])(product.rrp)), " *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, Object(_shared_currency__WEBPACK_IMPORTED_MODULE_3__["priceFormat"])(product.rrp)), " ", "*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "py-2 text-sm"
-        }, "Now only: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        }, "Now only:", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "text-red text-xl font-semibold"
         }, Object(_shared_currency__WEBPACK_IMPORTED_MODULE_3__["priceFormat"])(product.final_price))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "py-2 text-sm"
-        }, "You save: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        }, "You save:", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "text-red font-semibold"
         }, "".concat(product.discount, "%"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "py-2 text-sm"
-        }, "Including VAT ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        }, "Including VAT", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "underline"
         }, "plus delivery costs")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "py-4 text-sm text-black underline"
@@ -58373,7 +58373,7 @@ var ProductView = /*#__PURE__*/function (_Component) {
           size: this.state.selectedSize,
           qty: this.state.selectedQty
         }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          className: "bg-transparent hover:bg-grey-light text-black py-2 px-4 border border-black"
+          className: "bg-transparent hover:bg-gray-light text-black py-2 px-4 border border-black"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
           icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faHeart"],
           className: "mr-3 text-red"
