@@ -18,6 +18,7 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+        @stack('styles')
 
         <!-- Alpine JS -->
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -497,5 +498,6 @@
         </footer>
 
         <script src="{{ asset('js/app.js') }}"></script>
+        @stack('scripts')
     </body>
     </html>

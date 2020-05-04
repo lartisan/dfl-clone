@@ -33,14 +33,23 @@
 
 		<!-- Main menu -->
 		<div :class="{ 'hidden': !isOpen }" class="menus md:flex mt-6 md:mt-1 px-6 md:px-0"> <!-- transition-opacity opacity-100 -->
-			<div class="flex space-x-20 md:hidden">
+			<div class="gender flex space-x-20 md:hidden">
 				<a class="uppercase font-bold" href="#">Women</a>
 				<a class="uppercase font-bold border-b-4 border-red-600" href="#">Men</a>
 			</div>
-			<ul class="divide-y divide-gray-300 border-b border-gray-300 mt-2 mb-6 md:mb-0 md:w-full md:px-4 md:bg-black md:text-white md:divide-y-0 md:flex md:space-x-6 md:text-sm md:uppercase">
+			
+			<ul class="primary-menu-list md:relative divide-y divide-gray-300 border-b border-gray-300 mt-2 mb-6 md:mb-0 md:w-full md:bg-black md:border md:border-black md:divide-y-0 md:flex">
 				@foreach (config('dfl.mainMenus') as $primaryMenu)
-					<li class="py-2" x-data="{ isCollapsed: false }">
-						<a @click.prevent="isCollapsed = !isCollapsed" @click.away="isCollapsed = false" class=" flex items-center justify-between" href="#">
+					<li 
+						:class="{ 'md:text-black md:bg-white': isCollapsed }"
+						@mouseenter.debounce.100ms="isCollapsed = true"
+						@mouseleave.debounce.100ms="isCollapsed = false"
+						{{-- @click.away="isCollapsed = false"  --}}
+						x-data="{ isCollapsed: false }">
+						<a 
+							:class="{ 'md:text-white md:hover:text-black md:hover:bg-white md:hover:border md:hover:border-black': !isCollapsed }"
+							class="flex items-center justify-between w-full py-2 md:px-4 md:text-xs md:uppercase md:justify-around" 
+							href="#">
 							{{ $primaryMenu['name'] }}
 							<svg class="md:hidden w-6 h-6 fill-current text-gray-600" viewBox="0 0 20 20">
 								<path x-show="isCollapsed" d="M16 10c0 .553-.048 1-.601 1H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H15.4c.552 0 .6.447.6 1z"/>
@@ -48,27 +57,46 @@
 							</svg>
 						</a>
 						@unless( empty($primaryMenu['children']) )
-							<ul :class="{ 'hidden': !isCollapsed }" class="secondaryMenu mt-4 text-sm space-y-3">
-								@foreach ($primaryMenu['children'] as $secondaryMenu)
-									<li class="">
-										<a 
-											class="
-												{{ (empty($secondaryMenu['children']) && $loop->first) ? 'font-bold mb-2' : '' }}
-												{{ !empty($secondaryMenu['children']) ? 'text-xl font-thin' : '' }}
-											" 
-											href="#">{{ $secondaryMenu['name'] }}</a>
-										@unless( empty($secondaryMenu['children']) )
-											<ul class=" mt-3 ml-2 space-y-2">
-												@foreach($secondaryMenu['children'] as $thirdMenu)
-													<li>
-														<a class="{{ $loop->first ? 'font-bold mb-2' : '' }}" href="#">{{ $thirdMenu['name'] }}</a>
-													</li>
-												@endforeach
-											</ul>
-										@endunless
-									</li>
-								@endforeach
-							</ul>
+							<div
+								class="secondary-menu-container" :class="{ 'hidden': !isCollapsed }">
+								<div class="md:absolute md:left-0 md:w-full mt-4 md:mt-0 md:p-3 md:flex md:flex-row md:space-x-32 md:bg-white md:border md:border-black">
+									<ul class="secondary-menu-list text-sm space-y-3 md:space-y-1 {{ !empty($primaryMenu['children'][count($primaryMenu['children'])-1]['children']) ? 'md:flex md:flex-row md:space-x-40 md:space-y-0' : '' }}">
+										@if( empty($primaryMenu['children'][count($primaryMenu['children'])-1]['children']) ) <li class="hidden md:block text-lg mb-4">Category</li> @endif
+										@foreach ($primaryMenu['children'] as $secondaryMenu)
+											<li class="">
+												<a 
+													class="
+														{{ (empty($secondaryMenu['children']) && $loop->first) ? 'font-bold mb-2' : '' }}
+														{{ !empty($secondaryMenu['children']) ? 'text-xl md:text-base font-thin md:font-normal' : '' }}
+													" 
+													href="#">{{ $secondaryMenu['name'] }}</a>
+												@unless( empty($secondaryMenu['children']) )
+													<ul class=" mt-3 ml-2 md:ml-0 space-y-2">
+														@foreach($secondaryMenu['children'] as $thirdMenu)
+															<li>
+																<a class="{{ $loop->first ? 'font-bold mb-2' : '' }}" href="#">{{ $thirdMenu['name'] }}</a>
+															</li>
+														@endforeach
+													</ul>
+												@endunless
+											</li>
+										@endforeach
+									</ul>
+
+									@if( empty($primaryMenu['children'][count($primaryMenu['children'])-1]['children']) )
+										<ul class="hidden md:block secondary-menu-list-options text-sm md:space-y-1">
+											<li class="hidden md:block text-lg mb-4">Top Fashion Brands</li>
+											@foreach ($primaryMenu['brands'] as $brand)
+												<li>
+													<a href="#">{{ $brand['name'] }}</a>
+												</li>
+											@endforeach
+										</ul>
+
+										<img class="hidden md:block p-10" src="{{ asset('img/'.Str::slug($primaryMenu['name']).'-menu.jpg') }}" alt="">
+									@endif
+								</div>
+							</div>
 						@endunless
 					</li>
 				@endforeach
